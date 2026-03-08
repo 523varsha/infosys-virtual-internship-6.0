@@ -1,2 +1,8 @@
-flask
+Flask
+Flask-SQLAlchemy
+Flask-Cors
+Flask-Bcrypt
+Flask-JWT-Extended
 requests
+fastapi
+uvicorn

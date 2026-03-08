@@ -29,10 +29,10 @@ def epa_readings():
     If the API is down or times out, it provides a structured fallback response.
     """
     try:
-        url = "https://www.waterqualitydata.us/data/Result/search"
+        url = "https://www.waterqualitydata.us/data/Station/search"
         params = {
-            "statecode": "US:CA",
-            "mimeType": "json",
+            "statecode": "US:06",
+            "mimeType": "geojson",
             "maxresults": "10" # Limiting to prevent massive payloads during testing
         }
         response = requests.get(url, params=params, timeout=10)
